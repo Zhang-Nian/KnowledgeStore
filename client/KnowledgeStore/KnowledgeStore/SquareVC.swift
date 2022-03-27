@@ -1,24 +1,18 @@
 //
-//  LoginSuccessVC.swift
-//  Knowledge Store
+//  SquareVC.swift
+//  KnowledgeStore
 //
-//  Created by zhangnian on 2022/3/26.
+//  Created by zhangnian on 2022/3/27.
 //
 
 import UIKit
 
-class LoginSuccessVC: UIViewController {
+class SquareVC: UIViewController {
 
-    var text: String = ""
-    
-    @IBOutlet weak var textLabel: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        textLabel.text = text
     }
     
 

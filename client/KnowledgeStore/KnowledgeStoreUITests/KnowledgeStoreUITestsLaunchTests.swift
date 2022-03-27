@@ -1,13 +1,13 @@
 //
-//  Knowledge_StoreUITestsLaunchTests.swift
-//  Knowledge StoreUITests
+//  KnowledgeStoreUITestsLaunchTests.swift
+//  KnowledgeStoreUITests
 //
-//  Created by zhangnian on 2022/3/19.
+//  Created by zhangnian on 2022/3/27.
 //
 
 import XCTest
 
-class Knowledge_StoreUITestsLaunchTests: XCTestCase {
+class KnowledgeStoreUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

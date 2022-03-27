@@ -1,13 +1,13 @@
 //
-//  RegisterVC.swift
-//  Knowledge Store
+//  PhoneLoginVC.swift
+//  KnowledgeStore
 //
-//  Created by zhangnian on 2022/3/26.
+//  Created by zhangnian on 2022/3/27.
 //
 
 import UIKit
 
-class RegisterVC: UIViewController {
+class PhoneLoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,9 +16,6 @@ class RegisterVC: UIViewController {
     }
     
 
-    @IBAction func clickLoginButton(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
-    }
     /*
     // MARK: - Navigation
 

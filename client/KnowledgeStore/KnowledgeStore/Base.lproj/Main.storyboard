@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="KnowledgeStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="E2i-ak-LKE">
+                                <rect key="frame" x="60" y="366" width="294" height="174"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iW9-Jw-zcc">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="38"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="账号登录">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="S6a-Yg-nC0" kind="showDetail" id="zf4-lp-jx3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxo-RN-07x">
+                                        <rect key="frame" x="0.0" y="68" width="294" height="38"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="手机号登录">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="ZGc-cu-Xcx" kind="show" id="es4-uQ-7DG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lil-5E-reP">
+                                        <rect key="frame" x="0.0" y="136" width="294" height="38"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="其他登录方式">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="5FS-JI-qR0" kind="show" id="nKi-Em-Yb3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Lil-5E-reP" secondAttribute="trailing" id="6U1-x3-R83"/>
+                                    <constraint firstItem="Lil-5E-reP" firstAttribute="leading" secondItem="E2i-ak-LKE" secondAttribute="leading" id="oEV-RA-caa"/>
+                                    <constraint firstAttribute="trailing" secondItem="iW9-Jw-zcc" secondAttribute="trailing" id="ssj-60-kiD"/>
+                                    <constraint firstItem="iW9-Jw-zcc" firstAttribute="leading" secondItem="E2i-ak-LKE" secondAttribute="leading" id="swY-Vi-QkQ"/>
+                                    <constraint firstItem="dxo-RN-07x" firstAttribute="leading" secondItem="E2i-ak-LKE" secondAttribute="leading" id="syc-wX-gF0"/>
+                                    <constraint firstAttribute="trailing" secondItem="dxo-RN-07x" secondAttribute="trailing" id="xlS-wD-hvR"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E2i-ak-LKE" secondAttribute="trailing" constant="60" id="0vv-tw-jqB"/>
+                            <constraint firstItem="dxo-RN-07x" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="8TX-8V-5dk"/>
+                            <constraint firstItem="E2i-ak-LKE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="Scf-iK-EAI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+        <!--Phone LoginVC-->
+        <scene sceneID="gFK-pv-dXY">
+            <objects>
+                <viewController id="ZGc-cu-Xcx" customClass="PhoneLoginVC" customModule="KnowledgeStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n3w-Zq-sEC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="4um-qx-pbw">
+                                <rect key="frame" x="50" y="309.5" width="314" height="149"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7IX-UK-f8p">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="34"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="w9K-kf-DeP">
+                                        <rect key="frame" x="0.0" y="59" width="314" height="34"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cOi-ND-meC">
+                                                <rect key="frame" x="0.0" y="0.0" width="198.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDo-ZC-MVh">
+                                                <rect key="frame" x="218.5" y="0.0" width="95.5" height="34"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="获取验证码"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGK-aI-X0T">
+                                        <rect key="frame" x="50" y="118" width="214" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="登录"/>
+                                        <connections>
+                                            <segue destination="Pdd-nH-Eho" kind="show" id="oZY-RP-th0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="WGK-aI-X0T" secondAttribute="trailing" constant="50" id="Ria-6b-pLY"/>
+                                    <constraint firstItem="w9K-kf-DeP" firstAttribute="leading" secondItem="4um-qx-pbw" secondAttribute="leading" id="Wd7-Fj-nfo"/>
+                                    <constraint firstItem="WGK-aI-X0T" firstAttribute="leading" secondItem="4um-qx-pbw" secondAttribute="leading" constant="50" id="Z0G-dz-sCU"/>
+                                    <constraint firstAttribute="trailing" secondItem="7IX-UK-f8p" secondAttribute="trailing" id="dfa-Th-rmT"/>
+                                    <constraint firstItem="7IX-UK-f8p" firstAttribute="leading" secondItem="4um-qx-pbw" secondAttribute="leading" id="hPi-ja-3I3"/>
+                                    <constraint firstAttribute="trailing" secondItem="w9K-kf-DeP" secondAttribute="trailing" id="yO9-Iq-ho0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5vN-KQ-aTH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4um-qx-pbw" firstAttribute="leading" secondItem="5vN-KQ-aTH" secondAttribute="leading" constant="50" id="heW-zq-ltj"/>
+                            <constraint firstItem="5vN-KQ-aTH" firstAttribute="trailing" secondItem="4um-qx-pbw" secondAttribute="trailing" constant="50" id="kU5-lk-koy"/>
+                            <constraint firstItem="WGK-aI-X0T" firstAttribute="centerY" secondItem="5vN-KQ-aTH" secondAttribute="centerY" id="n6P-tY-5II"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4hd-kF-tVj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0K-qw-nbo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824.63768115942037" y="119.86607142857142"/>
+        </scene>
+        <!--小知识中心-->
+        <scene sceneID="4gi-IK-OQJ">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Pdd-nH-Eho" customClass="CenterVC" customModule="KnowledgeStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9dZ-ly-Ym4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wPx-7y-hyx">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ib-3h-Aod">
+                                        <rect key="frame" x="0.0" y="0.0" width="88.5" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="广场">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="aGE-0n-RXj" kind="show" id="qeQ-B6-0Hb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apq-Aq-knu">
+                                        <rect key="frame" x="108.5" y="0.0" width="88.5" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="发布">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Mff-i6-hjv" kind="show" id="Lqg-Vl-nPw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBh-5j-jBQ">
+                                        <rect key="frame" x="217" y="0.0" width="88.5" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="收藏">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="tfF-aq-H17" kind="show" id="Cu0-DD-mGt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUK-65-7cf">
+                                        <rect key="frame" x="325.5" y="0.0" width="88.5" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="我">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="g6s-bT-ztT"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="L12-J3-xui">
+                                <rect key="frame" x="0.0" y="35" width="414" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ruf-rK-Bz9">
+                                        <rect key="frame" x="0.0" y="1" width="100" height="97.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="l4Y-B7-9hn"/>
+                                            <constraint firstAttribute="width" constant="100" id="u0H-Oj-tMF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqb-WH-EQc">
+                                        <rect key="frame" x="124" y="64" width="290" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VP5-DI-r14">
+                                <rect key="frame" x="114.5" y="417" width="185" height="62"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="退出登录">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="40"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IMW-ER-U7T"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wPx-7y-hyx" firstAttribute="bottom" secondItem="IMW-ER-U7T" secondAttribute="bottom" id="5BL-aH-Wng"/>
+                            <constraint firstItem="VP5-DI-r14" firstAttribute="centerX" secondItem="9dZ-ly-Ym4" secondAttribute="centerX" id="DAT-iI-w7q"/>
+                            <constraint firstItem="IMW-ER-U7T" firstAttribute="trailing" secondItem="wPx-7y-hyx" secondAttribute="trailing" id="Ifu-lq-1ht"/>
+                            <constraint firstItem="L12-J3-xui" firstAttribute="top" secondItem="9dZ-ly-Ym4" secondAttribute="top" constant="35" id="Jjp-KN-IOO"/>
+                            <constraint firstItem="wPx-7y-hyx" firstAttribute="leading" secondItem="IMW-ER-U7T" secondAttribute="leading" id="b6x-fD-0kj"/>
+                            <constraint firstItem="L12-J3-xui" firstAttribute="leading" secondItem="IMW-ER-U7T" secondAttribute="leading" id="dbK-iR-bIy"/>
+                            <constraint firstItem="IMW-ER-U7T" firstAttribute="trailing" secondItem="L12-J3-xui" secondAttribute="trailing" id="ja8-Le-I5e"/>
+                            <constraint firstItem="VP5-DI-r14" firstAttribute="centerY" secondItem="9dZ-ly-Ym4" secondAttribute="centerY" id="pkx-fJ-0y5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="小知识中心" id="6hD-mG-Rhj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6g6-vY-pdP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1934.7826086956522" y="119.86607142857142"/>
+        </scene>
+        <!--SquareVC-->
+        <scene sceneID="Q9z-Sa-S4y">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="aGE-0n-RXj" customClass="SquareVC" customModule="KnowledgeStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7hT-qL-EQC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RBe-Ay-CJX">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4u8-zj-kyw">
+                                        <rect key="frame" x="0.0" y="0.0" width="88.5" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="广场">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7L-AR-600">
+                                        <rect key="frame" x="108.5" y="0.0" width="88.5" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="发布">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Mff-i6-hjv" kind="show" id="8Sp-w8-cpX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfZ-Eg-Zw8">
+                                        <rect key="frame" x="217" y="0.0" width="88.5" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="收藏">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="tfF-aq-H17" kind="show" id="r5X-5s-Tsh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDQ-VR-OPi">
+                                        <rect key="frame" x="325.5" y="0.0" width="88.5" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="我">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Pdd-nH-Eho" kind="show" id="Ycm-YN-3cC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Yep-39-gs7"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0bL-Zi-4bT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RBe-Ay-CJX" firstAttribute="leading" secondItem="0bL-Zi-4bT" secondAttribute="leading" id="1gu-dc-TOf"/>
+                            <constraint firstItem="0bL-Zi-4bT" firstAttribute="bottom" secondItem="RBe-Ay-CJX" secondAttribute="bottom" id="qsq-Y4-gJU"/>
+                            <constraint firstItem="0bL-Zi-4bT" firstAttribute="trailing" secondItem="RBe-Ay-CJX" secondAttribute="trailing" id="sVH-s9-YaF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7s3-Ei-aVl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AKt-lr-Nhv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2704" y="120"/>
+        </scene>
+        <!--Normal LoginVC-->
+        <scene sceneID="0oi-hh-fsz">
+            <objects>
+                <viewController id="S6a-Yg-nC0" customClass="NormalLoginVC" customModule="KnowledgeStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aRs-gI-w1M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="kxH-c8-tQF">
+                                <rect key="frame" x="70" y="287.5" width="274" height="171"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SJB-c8-mxq">
+                                        <rect key="frame" x="5" y="0.0" width="264" height="34"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d0F-oc-xMF">
+                                        <rect key="frame" x="5" y="70" width="264" height="34"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbf-xB-Dxd">
+                                        <rect key="frame" x="20" y="140" width="234" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="登录"/>
+                                        <connections>
+                                            <segue destination="Pdd-nH-Eho" kind="showDetail" id="I7g-dJ-tmg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="SJB-c8-mxq" secondAttribute="trailing" constant="5" id="IP7-PH-tzr"/>
+                                    <constraint firstAttribute="trailing" secondItem="zbf-xB-Dxd" secondAttribute="trailing" constant="20" id="MFS-h2-ue2"/>
+                                    <constraint firstAttribute="trailing" secondItem="d0F-oc-xMF" secondAttribute="trailing" constant="5" id="eYb-8P-EF4"/>
+                                    <constraint firstItem="zbf-xB-Dxd" firstAttribute="leading" secondItem="kxH-c8-tQF" secondAttribute="leading" constant="20" id="fM9-NY-NK9"/>
+                                    <constraint firstItem="SJB-c8-mxq" firstAttribute="leading" secondItem="kxH-c8-tQF" secondAttribute="leading" constant="5" id="mVq-MU-TIa"/>
+                                    <constraint firstItem="d0F-oc-xMF" firstAttribute="leading" secondItem="kxH-c8-tQF" secondAttribute="leading" constant="5" id="qHc-ym-f01"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xaK-V7-STf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zbf-xB-Dxd" firstAttribute="centerY" secondItem="xaK-V7-STf" secondAttribute="centerY" id="D8x-cd-vI5"/>
+                            <constraint firstItem="xaK-V7-STf" firstAttribute="trailing" secondItem="kxH-c8-tQF" secondAttribute="trailing" constant="70" id="L1a-cn-RSI"/>
+                            <constraint firstItem="kxH-c8-tQF" firstAttribute="leading" secondItem="xaK-V7-STf" secondAttribute="leading" constant="70" id="xuL-ND-Hq4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DgH-XZ-Zhy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uah-3F-b8H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="-588"/>
+        </scene>
+        <!--Other LoginVC-->
+        <scene sceneID="7VC-ag-rJA">
+            <objects>
+                <viewController id="5FS-JI-qR0" customClass="OtherLoginVC" customModule="KnowledgeStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OwE-Nl-Ksp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lic-Tx-rqj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vjb-zh-Nm6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YC9-84-QSC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="832"/>
+        </scene>
+        <!--PublishVC-->
+        <scene sceneID="Yh9-p5-stw">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Mff-i6-hjv" customClass="PublishVC" customModule="KnowledgeStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dtb-oz-q9S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="b8Q-sg-4qC">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDr-jR-Mqh">
+                                        <rect key="frame" x="0.0" y="0.0" width="88.5" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="广场">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="aGE-0n-RXj" kind="show" id="kW8-68-ySH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FU7-D5-dxL">
+                                        <rect key="frame" x="108.5" y="0.0" width="88.5" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="发布">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ah7-UA-j24">
+                                        <rect key="frame" x="217" y="0.0" width="88.5" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="收藏">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="tfF-aq-H17" kind="show" id="VFG-Ul-DJn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWM-lr-7XP">
+                                        <rect key="frame" x="325.5" y="0.0" width="88.5" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="我">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Pdd-nH-Eho" kind="show" id="Lhq-HL-e6P"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="17s-Ty-ytW"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d5h-UZ-a1h"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d5h-UZ-a1h" firstAttribute="trailing" secondItem="b8Q-sg-4qC" secondAttribute="trailing" id="tnO-ks-UL9"/>
+                            <constraint firstItem="b8Q-sg-4qC" firstAttribute="leading" secondItem="d5h-UZ-a1h" secondAttribute="leading" id="uzC-SG-Oha"/>
+                            <constraint firstItem="d5h-UZ-a1h" firstAttribute="bottom" secondItem="b8Q-sg-4qC" secondAttribute="bottom" id="wUj-sZ-1aE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iFw-ZZ-za1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qxZ-Ag-Bx1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3454" y="120"/>
+        </scene>
+        <!--CollectVC-->
+        <scene sceneID="chz-hI-RhN">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="tfF-aq-H17" customClass="CollectVC" customModule="KnowledgeStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OA4-CI-d7C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7z3-Di-nSQ">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbf-pT-DrC">
+                                        <rect key="frame" x="0.0" y="0.0" width="88.5" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="广场">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="aGE-0n-RXj" kind="show" id="QjG-cZ-hSG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1z-sr-uAq">
+                                        <rect key="frame" x="108.5" y="0.0" width="88.5" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="发布">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Mff-i6-hjv" kind="show" id="1WX-Sg-n3P"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bw8-Aw-U23">
+                                        <rect key="frame" x="217" y="0.0" width="88.5" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="收藏">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMr-FL-AMt">
+                                        <rect key="frame" x="325.5" y="0.0" width="88.5" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="我">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Pdd-nH-Eho" kind="show" id="wgO-id-a1i"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="i5u-eq-3gY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TgH-nJ-CeF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TgH-nJ-CeF" firstAttribute="trailing" secondItem="7z3-Di-nSQ" secondAttribute="trailing" id="OR2-wQ-Fhf"/>
+                            <constraint firstItem="7z3-Di-nSQ" firstAttribute="leading" secondItem="TgH-nJ-CeF" secondAttribute="leading" id="tmP-15-Ytl"/>
+                            <constraint firstItem="TgH-nJ-CeF" firstAttribute="bottom" secondItem="7z3-Di-nSQ" secondAttribute="bottom" id="z1Y-Xj-bZg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dIJ-Ih-X6y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="61x-ep-bVs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4217" y="120"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="VFG-Ul-DJn"/>
+        <segue reference="1WX-Sg-n3P"/>
+        <segue reference="QjG-cZ-hSG"/>
+        <segue reference="wgO-id-a1i"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="person.crop.rectangle.fill" catalog="system" width="128" height="93"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

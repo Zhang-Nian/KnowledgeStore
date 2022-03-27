@@ -1,13 +1,13 @@
 //
-//  PersonalCenterVC.swift
-//  Knowledge Store
+//  OtherLoginVC.swift
+//  KnowledgeStore
 //
-//  Created by zhangnian on 2022/3/26.
+//  Created by zhangnian on 2022/3/27.
 //
 
 import UIKit
 
-class PersonalCenterVC: UIViewController {
+class OtherLoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

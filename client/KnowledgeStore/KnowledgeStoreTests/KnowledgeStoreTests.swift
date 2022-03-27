@@ -1,14 +1,14 @@
 //
-//  Knowledge_StoreTests.swift
-//  Knowledge StoreTests
+//  KnowledgeStoreTests.swift
+//  KnowledgeStoreTests
 //
-//  Created by zhangnian on 2022/3/19.
+//  Created by zhangnian on 2022/3/27.
 //
 
 import XCTest
-@testable import Knowledge_Store
+@testable import KnowledgeStore
 
-class Knowledge_StoreTests: XCTestCase {
+class KnowledgeStoreTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

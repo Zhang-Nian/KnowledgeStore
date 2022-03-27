@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Knowledge Store
+//  KnowledgeStore
 //
-//  Created by zhangnian on 2022/3/19.
+//  Created by zhangnian on 2022/3/27.
 //
 
 import UIKit

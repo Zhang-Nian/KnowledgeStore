@@ -1,13 +1,13 @@
 //
-//  SquareVC.swift
-//  Knowledge Store
+//  MyselfVC.swift
+//  KnowledgeStore
 //
-//  Created by zhangnian on 2022/3/26.
+//  Created by zhangnian on 2022/3/27.
 //
 
 import UIKit
 
-class SquareVC: UIViewController {
+class MyselfVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
