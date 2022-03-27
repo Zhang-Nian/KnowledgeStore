@@ -299,20 +299,57 @@
                                     <constraint firstAttribute="height" constant="50" id="Yep-39-gs7"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Gxg-dk-qSx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="如何做出一款好产品" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DUc-bT-fih">
+                                        <rect key="frame" x="0.0" y="0.0" width="348.5" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spd-cq-hRD">
+                                        <rect key="frame" x="368.5" y="0.0" width="45.5" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="DUc-bT-fih" firstAttribute="top" secondItem="Gxg-dk-qSx" secondAttribute="top" constant="5" id="4gf-UC-bEe"/>
+                                    <constraint firstItem="DUc-bT-fih" firstAttribute="leading" secondItem="Gxg-dk-qSx" secondAttribute="leading" constant="10" id="B6b-AR-iob"/>
+                                    <constraint firstAttribute="bottom" secondItem="DUc-bT-fih" secondAttribute="bottom" constant="5" id="Hah-00-hde"/>
+                                    <constraint firstAttribute="height" constant="50" id="NzW-nQ-6s4"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xIz-zi-6eo">
+                                <rect key="frame" x="0.0" y="104" width="414" height="708"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IeI-oi-oZH">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="708"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0bL-Zi-4bT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="RBe-Ay-CJX" firstAttribute="leading" secondItem="0bL-Zi-4bT" secondAttribute="leading" id="1gu-dc-TOf"/>
+                            <constraint firstItem="xIz-zi-6eo" firstAttribute="leading" secondItem="0bL-Zi-4bT" secondAttribute="leading" id="7JK-MA-rVo"/>
+                            <constraint firstItem="0bL-Zi-4bT" firstAttribute="trailing" secondItem="xIz-zi-6eo" secondAttribute="trailing" id="EbV-Xf-NOE"/>
+                            <constraint firstItem="Gxg-dk-qSx" firstAttribute="leading" secondItem="0bL-Zi-4bT" secondAttribute="leading" id="Q5D-yL-jni"/>
+                            <constraint firstItem="xIz-zi-6eo" firstAttribute="top" secondItem="Gxg-dk-qSx" secondAttribute="bottom" constant="10" id="ZWf-Hh-tGB"/>
+                            <constraint firstItem="RBe-Ay-CJX" firstAttribute="top" secondItem="xIz-zi-6eo" secondAttribute="bottom" id="i7d-XM-FV3"/>
                             <constraint firstItem="0bL-Zi-4bT" firstAttribute="bottom" secondItem="RBe-Ay-CJX" secondAttribute="bottom" id="qsq-Y4-gJU"/>
+                            <constraint firstItem="Gxg-dk-qSx" firstAttribute="top" secondItem="0bL-Zi-4bT" secondAttribute="top" id="r11-xh-AkZ"/>
                             <constraint firstItem="0bL-Zi-4bT" firstAttribute="trailing" secondItem="RBe-Ay-CJX" secondAttribute="trailing" id="sVH-s9-YaF"/>
+                            <constraint firstItem="0bL-Zi-4bT" firstAttribute="trailing" secondItem="Gxg-dk-qSx" secondAttribute="trailing" id="wqU-xx-V3z"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7s3-Ei-aVl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AKt-lr-Nhv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2704" y="120"/>
+            <point key="canvasLocation" x="2702.898550724638" y="119.86607142857142"/>
         </scene>
         <!--Normal LoginVC-->
         <scene sceneID="0oi-hh-fsz">
@@ -441,20 +478,73 @@
                                     <constraint firstAttribute="height" constant="50" id="17s-Ty-ytW"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vSs-OF-HEh">
+                                <rect key="frame" x="90" y="59" width="234" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxj-Gp-STo">
+                                        <rect key="frame" x="0.0" y="0.0" width="117" height="31"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="已发布">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hwg-wN-Qum">
+                                        <rect key="frame" x="117" y="0.0" width="117" height="31"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="草稿">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lq3-wt-KCV">
+                                <rect key="frame" x="250" y="712" width="164" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7b-NP-eRW">
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Hlw-lX-WqG"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ALR-wx-o2O">
+                                <rect key="frame" x="0.0" y="100" width="414" height="612"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ICQ-hd-aAc">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="612"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d5h-UZ-a1h"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ALR-wx-o2O" firstAttribute="top" secondItem="vSs-OF-HEh" secondAttribute="bottom" constant="10" id="BQE-yt-Jmp"/>
+                            <constraint firstItem="lq3-wt-KCV" firstAttribute="leading" secondItem="d5h-UZ-a1h" secondAttribute="leading" constant="250" id="BZF-wE-QJ0"/>
+                            <constraint firstItem="d5h-UZ-a1h" firstAttribute="trailing" secondItem="ALR-wx-o2O" secondAttribute="trailing" id="Fk3-qS-EjH"/>
+                            <constraint firstItem="vSs-OF-HEh" firstAttribute="top" secondItem="d5h-UZ-a1h" secondAttribute="top" constant="15" id="QQN-YI-XwB"/>
+                            <constraint firstItem="d5h-UZ-a1h" firstAttribute="trailing" secondItem="vSs-OF-HEh" secondAttribute="trailing" constant="90" id="XYG-ob-5cr"/>
+                            <constraint firstItem="d5h-UZ-a1h" firstAttribute="trailing" secondItem="lq3-wt-KCV" secondAttribute="trailing" id="YMz-Gp-MgZ"/>
+                            <constraint firstItem="ALR-wx-o2O" firstAttribute="leading" secondItem="d5h-UZ-a1h" secondAttribute="leading" id="d1b-vH-yfR"/>
+                            <constraint firstItem="lq3-wt-KCV" firstAttribute="top" secondItem="ALR-wx-o2O" secondAttribute="bottom" id="grU-lR-f88"/>
+                            <constraint firstItem="vSs-OF-HEh" firstAttribute="leading" secondItem="d5h-UZ-a1h" secondAttribute="leading" constant="90" id="oJX-a1-kgo"/>
                             <constraint firstItem="d5h-UZ-a1h" firstAttribute="trailing" secondItem="b8Q-sg-4qC" secondAttribute="trailing" id="tnO-ks-UL9"/>
                             <constraint firstItem="b8Q-sg-4qC" firstAttribute="leading" secondItem="d5h-UZ-a1h" secondAttribute="leading" id="uzC-SG-Oha"/>
                             <constraint firstItem="d5h-UZ-a1h" firstAttribute="bottom" secondItem="b8Q-sg-4qC" secondAttribute="bottom" id="wUj-sZ-1aE"/>
+                            <constraint firstItem="b8Q-sg-4qC" firstAttribute="top" secondItem="lq3-wt-KCV" secondAttribute="bottom" id="yUi-4g-P9R"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iFw-ZZ-za1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qxZ-Ag-Bx1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3454" y="120"/>
+            <point key="canvasLocation" x="3453.6231884057975" y="119.86607142857142"/>
         </scene>
         <!--CollectVC-->
         <scene sceneID="chz-hI-RhN">
@@ -532,11 +622,13 @@
     <inferredMetricsTieBreakers>
         <segue reference="VFG-Ul-DJn"/>
         <segue reference="1WX-Sg-n3P"/>
-        <segue reference="QjG-cZ-hSG"/>
-        <segue reference="wgO-id-a1i"/>
+        <segue reference="kW8-68-ySH"/>
+        <segue reference="Lhq-HL-e6P"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.crop.rectangle.fill" catalog="system" width="128" height="93"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
