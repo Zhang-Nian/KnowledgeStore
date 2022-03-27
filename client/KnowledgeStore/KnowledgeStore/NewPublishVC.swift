@@ -1,15 +1,15 @@
 //
-//  MyselfVC.swift
+//  NewPublishVC.swift
 //  KnowledgeStore
 //
 //  Created by zhangnian on 2022/3/27.
 //
 
-// myself page: show username  headphoto  and introduction
+// new publish page : you can edit in this page
 
 import UIKit
 
-class MyselfVC: UIViewController {
+class NewPublishVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

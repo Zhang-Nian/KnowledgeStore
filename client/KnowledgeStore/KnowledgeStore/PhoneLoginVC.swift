@@ -5,6 +5,8 @@
 //  Created by zhangnian on 2022/3/27.
 //
 
+// login by phone number
+
 import UIKit
 
 class PhoneLoginVC: UIViewController {

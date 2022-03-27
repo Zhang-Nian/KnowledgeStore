@@ -5,6 +5,8 @@
 //  Created by zhangnian on 2022/3/27.
 //
 
+// normal login use username and password
+
 import UIKit
 
 class NormalLoginVC: UIViewController {

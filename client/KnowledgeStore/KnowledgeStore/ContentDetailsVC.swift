@@ -1,15 +1,15 @@
 //
-//  MyselfVC.swift
+//  ContentDetailsVC.swift
 //  KnowledgeStore
 //
 //  Created by zhangnian on 2022/3/27.
 //
 
-// myself page: show username  headphoto  and introduction
+// content details : in this page, you will see the details of this content, including the publishing of time
 
 import UIKit
 
-class MyselfVC: UIViewController {
+class ContentDetailsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

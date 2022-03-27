@@ -5,6 +5,8 @@
 //  Created by zhangnian on 2022/3/27.
 //
 
+// square page : show all contents
+
 import UIKit
 
 class SquareVC: UIViewController {

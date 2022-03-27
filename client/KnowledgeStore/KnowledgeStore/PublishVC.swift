@@ -5,6 +5,8 @@
 //  Created by zhangnian on 2022/3/27.
 //
 
+// publish page : you can publish new content by this
+
 import UIKit
 
 class PublishVC: UIViewController {

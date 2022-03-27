@@ -5,6 +5,9 @@
 //  Created by zhangnian on 2022/3/27.
 //
 
+// collect page : you can collect some interesting contents
+//                in this page you can find all of them
+
 import UIKit
 
 class CollectVC: UIViewController {
