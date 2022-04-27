@@ -25,6 +25,8 @@
 		0A41472127F05882009B2993 /* CollectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41472027F05882009B2993 /* CollectVC.swift */; };
 		0A41472327F096A9009B2993 /* NewPublishVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41472227F096A9009B2993 /* NewPublishVC.swift */; };
 		0A41472527F09A16009B2993 /* ContentDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41472427F09A16009B2993 /* ContentDetailsVC.swift */; };
+		0A414727281929F9009B2993 /* MessageQueueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A414726281929F9009B2993 /* MessageQueueVC.swift */; };
+		0A41472928193011009B2993 /* ModifyPersonalInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41472828193011009B2993 /* ModifyPersonalInfoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		0A41472027F05882009B2993 /* CollectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectVC.swift; sourceTree = "<group>"; };
 		0A41472227F096A9009B2993 /* NewPublishVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPublishVC.swift; sourceTree = "<group>"; };
 		0A41472427F09A16009B2993 /* ContentDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailsVC.swift; sourceTree = "<group>"; };
+		0A414726281929F9009B2993 /* MessageQueueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageQueueVC.swift; sourceTree = "<group>"; };
+		0A41472828193011009B2993 /* ModifyPersonalInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyPersonalInfoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,11 +128,13 @@
 				0A41471827F0449F009B2993 /* PhoneLoginVC.swift */,
 				0A41471427F0423C009B2993 /* OtherLoginVC.swift */,
 				0A41471A27F04788009B2993 /* MyselfVC.swift */,
+				0A41472828193011009B2993 /* ModifyPersonalInfoVC.swift */,
 				0A41471C27F0549E009B2993 /* SquareVC.swift */,
 				0A41471E27F056F3009B2993 /* PublishVC.swift */,
 				0A41472227F096A9009B2993 /* NewPublishVC.swift */,
 				0A41472027F05882009B2993 /* CollectVC.swift */,
 				0A41472427F09A16009B2993 /* ContentDetailsVC.swift */,
+				0A414726281929F9009B2993 /* MessageQueueVC.swift */,
 				0A4146EA27F03CB6009B2993 /* Main.storyboard */,
 				0A4146ED27F03CB8009B2993 /* Assets.xcassets */,
 				0A4146EF27F03CB8009B2993 /* LaunchScreen.storyboard */,
@@ -285,9 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A414727281929F9009B2993 /* MessageQueueVC.swift in Sources */,
 				0A4146E927F03CB6009B2993 /* LoginVC.swift in Sources */,
 				0A41471727F042AB009B2993 /* NormalLogin.swift in Sources */,
 				0A41471527F0423C009B2993 /* OtherLoginVC.swift in Sources */,
+				0A41472928193011009B2993 /* ModifyPersonalInfoVC.swift in Sources */,
 				0A41471D27F0549E009B2993 /* SquareVC.swift in Sources */,
 				0A41472327F096A9009B2993 /* NewPublishVC.swift in Sources */,
 				0A4146E527F03CB6009B2993 /* AppDelegate.swift in Sources */,
